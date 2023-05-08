@@ -124,8 +124,9 @@ def main():
         if not args.dry_run:
             sp.playlist_add_items(playlist["id"], tracks_batch)
 
-    os.remove(tracks_file)
-    os.remove(unmatched_file)
+    if not args.dry_run:
+        os.remove(tracks_file)
+        os.remove(unmatched_file)
 
 
 if __name__ == "__main__":
