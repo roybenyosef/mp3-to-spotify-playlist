@@ -2,7 +2,6 @@ import argparse
 import math
 import os
 from pathlib import Path
-import sys
 from typing import List, Tuple
 
 from dotenv import load_dotenv
